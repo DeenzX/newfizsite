@@ -308,7 +308,7 @@ details[open]::before {
         }
         
         .this-ul {
-            padding: 20px; 
+            padding: 50px;
             list-style-type: disc;
         }
         
@@ -408,7 +408,7 @@ details[open]::before {
         }
         
         .this-ul {
-            padding: 20px; 
+            padding: 50px; 
             list-style-type: disc;
         }
         

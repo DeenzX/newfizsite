@@ -2,6 +2,50 @@
     text-align: center;
 }
 
+.color-red {
+    color: rgb(255, 0, 0);
+    user-select: none;
+}
+
+.color-green {
+    color: rgb(0, 255, 0);
+    user-select: none;
+}
+
+.this-talking-div {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+.this-presentations-border {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+.this-ul {
+    padding: 20px; 
+    list-style-type: disc;
+}
+
+.this-li {
+    margin: 0;
+    padding: 0;
+}
+
+.this-p {
+    margin-left: 10px;
+}
+
 .mаin {
     box-shadow: -5px 4px 15px 4px #000000;
     /* background-color: #576CA8; */

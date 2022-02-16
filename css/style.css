@@ -285,6 +285,41 @@ details[open]::before {
             height: auto;
             width: 100%;
         }
+
+        .this-talking-div {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            cursor: default;
+        }
+        
+        .this-presentations-border {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            cursor: default;
+            font-size: 15px;
+        }
+        
+        .this-ul {
+            padding: 20px; 
+            list-style-type: disc;
+        }
+        
+        .this-li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .this-p {
+            margin-left: 2.5px;
+        }
     }
 
     <!-- /* /////////////Mobile Responsive/////////////////// */ -->
@@ -349,6 +384,41 @@ details[open]::before {
         .gospoja {
             height: auto;
             width: 100%;
+        }
+
+        .this-talking-div {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            cursor: default;
+        }
+        
+        .this-presentations-border {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            cursor: default;
+            font-size: 15px;
+        }
+        
+        .this-ul {
+            padding: 20px; 
+            list-style-type: disc;
+        }
+        
+        .this-li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .this-p {
+            margin-left: 2.5px;
         }
     }
 

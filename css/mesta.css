@@ -316,6 +316,24 @@ details[open]::before {
             margin-bottom: 2.5em;
         }
 
+        .here-border:hover {
+            transform: scale(1.01);
+            transition: 1s;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+            transform: perspective(1px) translateZ(-1);
+            filter: blur(4px);
+        }
+        
+        .here-border:active {
+            transform: scale(1.01);
+            transition: 1s;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+            transform: perspective(1px) translateZ(-1);
+            filter: blur(4px);
+        }
+
     }
 
     <!-- /* /////////////Mobile Responsive/////////////////// */ -->

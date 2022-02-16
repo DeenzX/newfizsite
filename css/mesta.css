@@ -311,8 +311,8 @@ details[open]::before {
         }
         
         .sub-main {
-            margin-right: 1.5em;
-            margin-left: 2em;
+            margin-right: 0.9em;
+            margin-left: 1em;
             margin-bottom: 2.5em;
         }
 
@@ -401,9 +401,27 @@ details[open]::before {
         }
         
         .sub-main {
-            margin-right: 1.5em;
-            margin-left: 2em;
+            margin-right: 0.9em;
+            margin-left: 1em;
             margin-bottom: 2.5em;
+        }
+
+        .here-border:hover {
+            transform: scale(1.01);
+            transition: 1s;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+            transform: perspective(1px) translateZ(-1);
+            filter: blur(4px);
+        }
+        
+        .here-border:active {
+            transform: scale(1.01);
+            transition: 1s;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: subpixel-antialiased;
+            transform: perspective(1px) translateZ(-1);
+            filter: blur(4px);
         }
     }
 

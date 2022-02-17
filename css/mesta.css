@@ -40,6 +40,10 @@
     transition: 1s;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
+
 .here-border:hover {
     transform: scale(1.01);
     transition: 1s;

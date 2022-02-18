@@ -218,6 +218,21 @@ details[open]::before {
     animation: fadeMe 300ms linear forwards;
 }
 
+#messenger {
+    animation-name: wait;
+    animation-duration: 10s;
+}
+
+@keyframes wait {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes menuAnim {
 
     0% {
@@ -293,10 +308,10 @@ details[open]::before {
 
         details[open] summary::before {
             content: "X";
-            padding-left: 4.2vmax;
-            padding-right: 4.2vmax;
-            padding-bottom: 1vmax;
-            padding-top: 1vmax;
+            padding-left: 1.9em;
+            padding-right: 1.9em;
+            padding-bottom: 0.7rem;
+            padding-top: 0.7rem;
             color: black;
         }
 
@@ -416,10 +431,10 @@ details[open]::before {
 
         details[open] summary::before {
             content: "X";
-            padding-left: 4.2vmax;
-            padding-right: 4.2vmax;
-            padding-bottom: 1vmax;
-            padding-top: 1vmax;
+            padding-left: 1.9em;
+            padding-right: 1.9em;
+            padding-bottom: 0.7rem;
+            padding-top: 0.7rem;
             color: black;
         }
 
@@ -479,18 +494,3 @@ details[open]::before {
     }
 
  /* ///////////////Galaxy fold responsive or displays 280 x 653///////////////// */ 
-
-#messenger {
-    animation-name: wait;
-    animation-duration: 10s;
-}
-
-@keyframes wait {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}

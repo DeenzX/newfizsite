@@ -10,36 +10,37 @@
 
 <body>
 
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
+    <div id="messenger">
+        <!-- Messenger Chat Plugin Code -->
+        <div id="fb-root"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+        <!-- Your Chat Plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+        <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "101509482469008");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v13.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
     </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101509482469008");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <div class="position">
         <details>
@@ -50,7 +51,7 @@
         </details>
     </div>
 
-    <h1>Групов проект - Физика 10 клас</h1>
+    <h1 class="group">Групов проект - Физика 10 клас</h1>
 
     <div class="mаin">
         <p>Здравейте, клас. Създавам този сайт във връзка с едномесечния проект по физика.</p>
@@ -132,6 +133,6 @@
 
        <p>(Допълнителна информация от госпожата по физика)</p>
     </div>
-    
+
 </body>
 </html>

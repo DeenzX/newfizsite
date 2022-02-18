@@ -47,10 +47,11 @@
 }
 
 .mаin {
-    box-shadow: -5px 4px 15px 4px #000000;
+    box-shadow: -5px 4px 15px 4px #ffff;
     /* background-color: #576CA8; */
     /* background-color: #7D4F50; */
-    background: linear-gradient(to bottom right, #ADEFD1FF, #00203FFF);
+    background: linear-gradient(to bottom right, rgb(143, 197, 173), #00203FFF);
+    border-radius: 10px;
 }
 
 .mаin, .p {

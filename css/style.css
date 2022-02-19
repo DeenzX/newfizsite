@@ -61,7 +61,7 @@
     margin-bottom: 30px;
     padding: 20px;
     margin-left: -7px;
-    margin-right: -7px;
+    margin-right: -0.1px;
 }
 
 .red {
@@ -90,6 +90,21 @@ body {
     background-image: url(../img/Backgorund.gif);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 0px;
+    animation-name: overflowShow;
+    animation-duration: 1s;
+}
+
+@keyframes overflowShow {
+
+    0% {
+        overflow: hidden;
+    }
+
+    100% {
+        overflow: visible;
+    }
+
 }
 
 h1 {
@@ -299,8 +314,8 @@ details[open]::before {
 
         details {
             margin: 40px;
-            margin-top: -2.5em;
-            margin-left: 0px;
+            margin-top: -2.7em;
+            margin-left: 5px;
             animation-name: pls;
             animation-duration: 1s;
             animation-direction: alternate-reverse;
@@ -422,8 +437,8 @@ details[open]::before {
 
         details {
             margin: 40px;
-            margin-top: -2.5em;
-            margin-left: 0px;
+            margin-top: -2.7em;
+            margin-left: 5px;
             animation-name: pls;
             animation-duration: 1s;
             animation-direction: alternate-reverse;
@@ -494,3 +509,39 @@ details[open]::before {
     }
 
  /* ///////////////Galaxy fold responsive or displays 280 x 653///////////////// */ 
+
+.loader {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #16191e;
+    position: absolute;
+    top: 0;
+}
+
+.loader>div {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #45474b;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+
+.content {
+    display: none;
+}
+
+@keyframes spin{
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}

@@ -1,5 +1,19 @@
 * {
     text-align: center;
-    margin-top: 20vmin;
+    margin-top: 13vmin;
+}
+
+body {
+    background-color: rgb(32, 28, 28);
+    font-family: 'Oswald', sans-serif;
+}
+
+#timer {
+    color: white;
+    font-size: 100px;
+}
+
+h1 {
+    color: whitesmoke;
 }
 

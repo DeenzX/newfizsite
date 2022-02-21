@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Времетраене</title>
     <link rel="stylesheet" href="css/vremetraene.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Скоро</h1>
+    <h1>Идеята на тази страница е да ви покаже колко време имате докато приключи проекта - колко време имате, докато трябва да сте готови и изпратили нещата.</h1>
+
+    <p id="timer"></p>
+
+    <script>
+        var countDownDate = new Date("Mar 18, 2022 17:50").getTime();
+
+        
+        var x = setInterval(function() {
+
+        
+        var now = new Date().getTime();
+
+        
+        var distance = countDownDate - now;
+
+        
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
 </body>
 </html>

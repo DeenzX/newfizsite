@@ -46,7 +46,7 @@
     margin-left: 10px;
 }
 
-.mаin {
+.main {
     box-shadow: -5px 4px 15px 4px #ffff;
     /* background-color: #576CA8; */
     /* background-color: #7D4F50; */
@@ -54,7 +54,7 @@
     border-radius: 10px;
 }
 
-.mаin, .p {
+.main, .p {
     font-size: 18px;
     margin: 10px;
     margin-top: 15px;
@@ -74,10 +74,6 @@
 
 .mein {
     user-select: none;
-}
-
-.position {
-    position: fixed;
 }
 
 :root {
@@ -111,9 +107,66 @@ h1 {
     color: white;
 }
 
+
+
+#messenger {
+    animation-name: wait;
+    animation-duration: 10s;
+}
+
+@keyframes wait {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes menuAnim {
+
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70px;
+    }
+
+}
+
+@keyframes fadeMe {
+
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes pls {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+
+}
+
+/* start of zapishi se navigation button */
+
+.position {
+    position: absolute;
+}
+
 details {
-    margin: 40px;
-    margin-top: 0px;
+    margin-left: 25px;
+    margin-top: -75px;
     animation-name: pls;
     animation-duration: 0.5s;
     animation-direction:normal;
@@ -233,55 +286,139 @@ details[open]::before {
     animation: fadeMe 300ms linear forwards;
 }
 
-#messenger {
-    animation-name: wait;
-    animation-duration: 10s;
+/* end of zapishi se navigation button */
+
+/* start of vremetraene navigation button */
+
+.vr-pos {
+    display: flex;
+    justify-content: flex-end;
 }
 
-@keyframes wait {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.vr-det {
+    margin-right: 1.3em;
+    animation-name: pls;
+    animation-duration: 0.5s;
+    animation-direction:normal;
 }
 
-@keyframes menuAnim {
-
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 70px;
-    }
-
+.vr-det[open] .vr-menu {
+    animation-name: menuAnim;
+    transition: 1s;
 }
 
-@keyframes fadeMe {
-
-    0% {
-        opacity: 0.4;
-    }
-    100% {
-        opacity: 0;
-    }
-
+.vr-det[open] .vr-menu:hover {
+    transform: scale(0.9);
+    transition: 1s;
 }
 
-@keyframes pls {
-
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(0.5);
-    }
-
+.vr-det[open] .vr-sum::before {
+    content: "X";
+    padding-right: 2.2vmax;
+    margin-left: 2.2vmax;
+    color: black;
 }
-  
+
+.vr-det[open] .vr-sum::after {
+    content: "";
+}
+
+.vr-det::before {
+    color: var(--secoColor);
+    position: absolute;
+    margin-left: 80px;
+    padding: 10px 10px;
+    opacity: 0.4;
+}
+
+.vr-det[open]::before {
+    animation: fadeMe 300ms linear forwards;
+}
+
+.vr-sum {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primColor);
+    border: 2px solid var(--secoColor);
+    border-radius: 10px;
+    color: var(--secoColor);
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    transition: transform 200ms ease-in-out 0s;
+    padding: 15px;
+}
+
+.vr-sum::before, .vr-sum::after {
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.vr-sum::before {
+    content: "";
+}
+
+.vr-sum::after {
+    content: "Времетраене";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+}
+
+.vr-sum:hover {
+    transform: scale(0.9);
+}
+
+.vr-sum::marker {
+    font-size: 0;
+}
+
+.vr-sum::-webkit-details-marker {
+    display: none;
+}
+
+.vr-menu {
+    height: 0;
+    width: fit-content;
+    border-radius: var(--cornerRad);
+    background-color: var(--primColor);
+    box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: closeMenu 300ms ease-in-out forwards;
+    position: fixed;
+}
+
+.vr-menu a {
+    margin: 0 16px;
+    color: blue;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    transition: filter 200ms linear 0s;
+}
+
+.vr-menu a:nth-of-type(1) {
+    padding-top: 24px;
+}
+
+.vr-menu a:nth-last-of-type(1) {
+    border-bottom: none;
+}
+
+.vr-menu a:hover {
+    filter: brightness(200%);
+}
+
+/* end of vremetraene navigation button */
+
+
 
 <!-- /* /////////////Mobile Responsive/////////////////// */ -->
 
@@ -312,13 +449,49 @@ details[open]::before {
             padding: 0.1px;
         }
 
+        summary::after {
+            content: "Запиши се";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            color: black;
+            padding: 10px;
+        }
+
         details {
             margin: 40px;
             margin-top: -2.7em;
-            margin-left: 5px;
+            margin-left: 0.3em;
             animation-name: pls;
             animation-duration: 1s;
             animation-direction: alternate-reverse;
+        }
+
+        .vr-det {
+            margin-right: 0.3em;
+            animation-name: pls;
+            animation-duration: 0.5s;
+            animation-direction:normal;
+        }
+
+        .vr-sum {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: var(--primColor);
+            border: 2px solid var(--secoColor);
+            border-radius: 10px;
+            color: var(--secoColor);
+            cursor: pointer;
+            user-select: none;
+            outline: none;
+            transition: transform 200ms ease-in-out 0s;
+            padding: 0.1px;
+        }
+
+        .main {
+            margin-top: 4px;
         }
 
         details[open] summary::before {
@@ -330,18 +503,9 @@ details[open]::before {
             color: black;
         }
 
-        summary::after {
-            content: "Запиши се";
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 25px;
-            color: black;
-            padding: 10px;
-        }
-
         .group {
-            margin-top: 60px;
+            margin-top: 40px;
+            margin-bottom: 75px;
         }
 
         .gospoja {
@@ -383,6 +547,7 @@ details[open]::before {
         .this-p {
             margin-left: 2.5px;
         }
+
     }
 
     <!-- /* /////////////Mobile Responsive/////////////////// */ -->
@@ -393,12 +558,6 @@ details[open]::before {
 
         .main, .p {
             font-size: 22px;
-            margin: 10px;
-            margin-top: 15px;
-            margin-bottom: 30px;
-            padding: 20px;
-            margin-left: -7px;
-            margin-right: -7px;
         }
 
     }
@@ -435,13 +594,49 @@ details[open]::before {
             padding: 0.1px;
         }
 
+        summary::after {
+            content: "Запиши се";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            color: black;
+            padding: 10px;
+        }
+
         details {
             margin: 40px;
             margin-top: -2.7em;
-            margin-left: 5px;
+            margin-left: 0.3em;
             animation-name: pls;
             animation-duration: 1s;
             animation-direction: alternate-reverse;
+        }
+
+        .vr-det {
+            margin-left: 0.1em;
+            animation-name: pls;
+            animation-duration: 0.5s;
+            animation-direction:normal;
+        }
+
+        .vr-sum {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: var(--primColor);
+            border: 2px solid var(--secoColor);
+            border-radius: 10px;
+            color: var(--secoColor);
+            cursor: pointer;
+            user-select: none;
+            outline: none;
+            transition: transform 200ms ease-in-out 0s;
+            padding: 0.1px;
+        }
+
+        .main {
+            margin-top: 4px;
         }
 
         details[open] summary::before {
@@ -453,18 +648,9 @@ details[open]::before {
             color: black;
         }
 
-        summary::after {
-            content: "Запиши се";
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 25px;
-            color: black;
-            padding: 10px;
-        }
-
         .group {
-            margin-top: 60px;
+            margin-top: 40px;
+            margin-bottom: 75px;
         }
 
         .gospoja {
@@ -545,3 +731,4 @@ details[open]::before {
     }
 
 }
+

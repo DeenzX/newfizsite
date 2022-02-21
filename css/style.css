@@ -468,6 +468,14 @@ details[open]::before {
             animation-direction: alternate-reverse;
         }
 
+        .position {
+            transform: scale(0.7);
+        }
+
+        .vr-pos {
+            transform: scale(0.7);
+        }
+
         .vr-det {
             margin-right: 0.3em;
             animation-name: pls;

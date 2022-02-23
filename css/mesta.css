@@ -339,6 +339,12 @@ details[open]::before {
             filter: blur(4px);
         }
 
+        .menu {
+            margin-left: 3.5em;
+            padding-right: 2em;
+            padding-left: 2em;
+        }
+
     }
 
     <!-- /* /////////////Mobile Responsive/////////////////// */ -->
@@ -355,6 +361,28 @@ details[open]::before {
             padding: 20px;
             margin-left: -7px;
             margin-right: -7px;
+        }
+
+        .mаin {
+            box-shadow: -5px 4px 15px 4px white;
+            background: linear-gradient(to bottom right, #ADEFD1FF, #00203FFF);
+            border-radius: 10px;
+            box-shadow: white;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+        
+        .here, .here1, .here2 {
+            font-size: 30px;
+        }
+        
+        .sub-main {
+            margin-right: 1.5em;
+            margin-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        .menu {
+            margin-left: 39.4em;
         }
 
     }

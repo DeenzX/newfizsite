@@ -340,9 +340,10 @@ details[open]::before {
         }
 
         .menu {
-            margin-left: 3.5em;
+            /* margin-left: 3.5em;
             padding-right: 2em;
-            padding-left: 2em;
+            padding-left: 2em; */
+            position: sticky;
         }
 
     }

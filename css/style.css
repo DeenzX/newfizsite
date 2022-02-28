@@ -496,6 +496,12 @@ details[open]::before {
             outline: none;
             transition: transform 200ms ease-in-out 0s;
             padding: 0.1px;
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+
+        .vr-menu {
+            padding-right: 7px;
         }
 
         .main {
@@ -642,6 +648,12 @@ details[open]::before {
             outline: none;
             transition: transform 200ms ease-in-out 0s;
             padding: 0.1px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .vr-menu {
+            padding-right: 20px;
         }
 
         .main {

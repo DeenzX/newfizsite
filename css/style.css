@@ -470,10 +470,12 @@ details[open]::before {
 
         .position {
             transform: scale(0.7);
+            margin-left: -1em;
         }
 
         .vr-pos {
             transform: scale(0.7);
+            margin-left: 13em;
         }
 
         .vr-det {
@@ -626,6 +628,16 @@ details[open]::before {
             animation-name: pls;
             animation-duration: 1s;
             animation-direction: alternate-reverse;
+        }
+
+        .position {
+            transform: scale(0.7);
+            margin-left: 0em;
+        }
+
+        .vr-pos {
+            transform: scale(0.7);
+            margin-left: -2em;
         }
 
         .vr-det {

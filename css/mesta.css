@@ -340,10 +340,18 @@ details[open]::before {
         }
 
         .menu {
-            /* margin-left: 3.5em;
+            display: flex;
             padding-right: 2em;
-            padding-left: 2em; */
-            position: sticky;
+            padding-left: 2em;
+        }
+
+        summary {
+            padding: 20px;
+        }
+
+        .position {
+            display: flex;
+            justify-content: center;
         }
 
     }
@@ -457,6 +465,21 @@ details[open]::before {
             -webkit-font-smoothing: subpixel-antialiased;
             transform: perspective(1px) translateZ(-1);
             filter: blur(4px);
+        }
+
+        .menu {
+            display: flex;
+            padding-right: 2em;
+            padding-left: 2em;
+        }
+
+        summary {
+            padding: 20px;
+        }
+
+        .position {
+            display: flex;
+            justify-content: center;
         }
     }
 

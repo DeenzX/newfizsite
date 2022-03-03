@@ -502,10 +502,6 @@ details[open]::before {
             padding-right: 15px;
         }
 
-        .vr-menu {
-            padding-right: 7px;
-        }
-
         .main {
             margin-top: 4px;
             margin-right: auto;
@@ -635,13 +631,8 @@ details[open]::before {
             margin-left: 0em;
         }
 
-        .vr-pos {
-            transform: scale(0.7);
-            margin-left: -2em;
-        }
-
         .vr-det {
-            margin-right: -40px;
+            margin-right: -45px;
             animation-name: pls;
             animation-duration: 0.5s;
             animation-direction:normal;
@@ -660,16 +651,32 @@ details[open]::before {
             outline: none;
             transition: transform 200ms ease-in-out 0s;
             padding: 0.1px;
+            margin-left: 0px;
             padding-left: 10px;
             padding-right: 10px;
         }
 
         .vr-menu {
-            padding-right: 20px;
+            margin-left: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-right: -80px;
+        }
+
+        .vr-pos {
+            transform: scale(0.7);
+            margin-left: -2em;
         }
 
         .main {
             margin-top: 4px;
+        }
+
+        .vr-det[open] .vr-sum::before {
+            content: "X";
+            padding-right: 25px;
+            margin-left: 10px;
+            color: black;
         }
 
         details[open] summary::before {

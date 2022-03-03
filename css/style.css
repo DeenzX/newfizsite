@@ -502,6 +502,13 @@ details[open]::before {
             padding-right: 15px;
         }
 
+        .vr-menu {
+            margin-left: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-right: -80px;
+        }
+
         .main {
             margin-top: 4px;
             margin-right: auto;

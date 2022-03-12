@@ -198,7 +198,7 @@ summary::before {
 }
 
 summary::after {
-    content: "Запиши се";
+    content: "Разпределение";
     display: flex;
     align-items: center;
     justify-content: center;
@@ -450,7 +450,7 @@ details[open]::before {
         }
 
         summary::after {
-            content: "Запиши се";
+            content: "Разпределение";
             display: flex;
             align-items: center;
             justify-content: center;
@@ -580,6 +580,8 @@ details[open]::before {
             font-size: 22px;
         }
 
+        
+
     }
 
     <!-- /* /////////////Desktop Responsive/////////////////// */ -->
@@ -615,7 +617,7 @@ details[open]::before {
         }
 
         summary::after {
-            content: "Запиши се";
+            content: "Разпределение";
             display: flex;
             align-items: center;
             justify-content: center;

@@ -492,6 +492,7 @@ details[open]::before {
     background-color: #16191e;
     position: absolute;
     top: 0;
+    margin-left: -8px;
 }
 
 .loader>div {
@@ -511,6 +512,7 @@ details[open]::before {
 
 .content {
     display: none;
+    
 }
 
 @keyframes spin{

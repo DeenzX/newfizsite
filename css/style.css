@@ -504,8 +504,8 @@ details[open]::before {
 
         .vr-menu {
             margin-left: 0px;
-            padding-left: 0px;
-            padding-right: 0px;
+            padding-left: 35px;
+            padding-right: 35px;
             margin-right: -80px;
         }
 
@@ -514,12 +514,23 @@ details[open]::before {
             margin-right: auto;
         }
 
+        .vr-det[open] .vr-sum::before {
+            content: "X";
+            padding-right: 0px;
+            margin-right: 50px;
+            margin-left: 50px;
+            text-align: center;
+            color: black;
+        }
+
         details[open] summary::before {
             content: "X";
             padding-left: 1.9em;
             padding-right: 1.9em;
             padding-bottom: 0.7rem;
             padding-top: 0.7rem;
+            margin-left: 45px;
+            margin-right: 45px;
             color: black;
         }
 
@@ -552,6 +563,12 @@ details[open]::before {
             font-weight: bold;
             cursor: default;
             font-size: 15px;
+        }
+
+        .menu {
+            margin-left: 5px;
+            padding-right: 30px;
+            padding-left: 30px;
         }
         
         .this-ul {

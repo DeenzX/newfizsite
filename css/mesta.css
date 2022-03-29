@@ -38,6 +38,7 @@
 .here-border {
     border: 2px solid black;
     transition: 1s;
+    user-select: none;
 }
 
 .line-through {
@@ -45,21 +46,11 @@
 }
 
 .here-border:hover {
-    transform: scale(1.01);
+    transform: scale(0.8);
     transition: 1s;
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
     transform: perspective(1px) translateZ(-1);
-    filter: blur(4px);
-}
-
-.here-border:active {
-    transform: scale(1.01);
-    transition: 1s;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: subpixel-antialiased;
-    transform: perspective(1px) translateZ(-1);
-    filter: blur(4px);
 }
 
 .here-border, .here3 .here4 {
@@ -108,7 +99,7 @@ h1 {
 }
 
 .position {
-    position: sticky;
+    position: flex;
     font-weight: bold;
 }
 
@@ -378,6 +369,8 @@ details[open]::before {
             border-radius: 10px;
             box-shadow: white;
             font-family: 'Yanone Kaffeesatz', sans-serif;
+            margin-right: 500px;
+            margin-left: 500px;
         }
         
         .here, .here1, .here2 {
@@ -391,7 +384,14 @@ details[open]::before {
         }
 
         .menu {
-            margin-left: 39.4em;
+            margin-left: 20em;
+        }
+
+        summary {
+
+            margin-left: 400px;
+            margin-right: 400px;
+            
         }
 
     }

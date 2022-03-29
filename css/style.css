@@ -593,11 +593,7 @@ details[open]::before {
 
     @media (min-width: 1280px) and (min-height: 720px) {
 
-        .main, .p {
-            font-size: 22px;
-        }
-
-        
+       
 
     }
 

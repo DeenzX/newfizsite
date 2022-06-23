@@ -121,3 +121,25 @@ a {
     color: rgb(90, 166, 236);
 
 }
+
+@media(max-width: 950px) {
+
+    .card-3-main {
+
+        border: 2px solid white;
+    
+        padding-top: 3%;
+        padding-bottom: 3%;
+    
+        padding-left: 5%;
+        padding-right: 5%;
+    
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+    
+    }
+
+}

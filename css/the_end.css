@@ -161,16 +161,22 @@ a {
 
 @media(max-width: 950px) {
 
+    body {
+
+        overflow: visible;
+
+    }
+
     .card-1-main {
 
-        box-shadow: -14px 8px 0px 6px rgba(0,0,0,0.9);
+        box-shadow: -10px 8px 0px 6px rgba(0,0,0,0.9);
         border-radius: 10px;
 
     }
 
     .card-2-main {
 
-        box-shadow: -14px 8px 0px 6px rgba(0,0,0,0.9);
+        box-shadow: -10px 8px 0px 6px rgba(0,0,0,0.9);
         border-radius: 10px;
 
     }
@@ -191,7 +197,7 @@ a {
         margin-top: 5vh;
         margin-bottom: 1vh;
     
-        box-shadow: -14px 8px 0px 6px rgba(0,0,0,0.9);
+        box-shadow: -10px 8px 0px 6px rgba(0,0,0,0.9);
         border-radius: 10px;
 
     }

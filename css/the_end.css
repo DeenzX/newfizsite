@@ -62,75 +62,6 @@ body {
 
 }
 
-.card-2-main {
-
-    border: 2px solid white;
-
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-
-    margin-left: 5vw;
-
-    transition: 2s;
-
-}
-
-.card-2-main:hover {
-
-    border-radius: 10px;
-    box-shadow: -14px 8px 0px 6px rgba(0,0,0,0.9);
-    transition: 2s;
-
-}
-
-.card-2 {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.card-3-main {
-
-    border: 2px solid white;
-
-    padding-top: 3%;
-    padding-bottom: 3%;
-
-    padding-left: 5%;
-    padding-right: 5%;
-
-    margin-left: 38.5%;
-    margin-right: 38.5%;
-    
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-
-    transition: 2s;
-
-}
-
-.card-3-main:hover {
-
-    border-radius: 10px;
-    box-shadow: -14px 8px 0px 6px rgba(0,0,0,0.9);
-    transition: 2s;
-
-}
-
-.card-3 {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
 p {
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -143,13 +74,6 @@ i {
 
     color: white;
     font-size: 6.5em;
-
-}
-
-.minimize {
-
-    font-size: 5.5em;
-
 
 }
 
@@ -169,34 +93,6 @@ a {
 
     .card-1-main {
 
-        box-shadow: -10px 8px 0px 6px rgba(0,0,0,0.9);
-        border-radius: 10px;
-
-    }
-
-    .card-2-main {
-
-        box-shadow: -10px 8px 0px 6px rgba(0,0,0,0.9);
-        border-radius: 10px;
-
-    }
-
-    .card-3-main {
-
-        border: 2px solid white;
-    
-        padding-top: 3%;
-        padding-bottom: 3%;
-    
-        padding-left: 5%;
-        padding-right: 5%;
-    
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-        
-        margin-top: 5vh;
-        margin-bottom: 1vh;
-    
         box-shadow: -10px 8px 0px 6px rgba(0,0,0,0.9);
         border-radius: 10px;
 
